@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bb-demo-argo
+  name: bb-demo-by-argo
   namespace: demoapp
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       bb: web-argo
