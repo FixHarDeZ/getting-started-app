@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bb-entrypoint
+  name: bb-entrypoint-argo
   namespace: demoapp
 spec:
   type: NodePort
   selector:
-    bb: web
+    bb: web-argo
   ports:
     - port: 3000
       targetPort: 3000
